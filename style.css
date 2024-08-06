@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-image: url(./delicious-serbian-food-arrangement-flat-lay.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 94vh;
+}
+.home {
+  padding: 30px 20px;
+  height: 94vh;
+  position: relative;
+}
+.header {
+  display: flex;
+}
+a,
+i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.main {
+  position: absolute;
+  opacity: 0.7;
+
+  left: calc((100% - 850px) / 2);
+  font-size: 55px;
+
+  color: white;
+  top: 50%;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 20s steps(60, end) infinite 2s forwards,
+    blink 1s step-start infinite;
+  border-right: 1px solid white;
+  transition: .5s;
+}
+.mainp {
+  width: 90%;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+    border-right: 1px solid transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.ma {
+  margin-right: 0px;
+}
+.footer {
+  color: white;
+  background-color: brown;
+  height: 50px;
+  padding: 15px 30px 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 365px) {
+  .home {
+    padding-left: 0px;
+
+    display: flex;
+    justify-content: start;
+  }
+  .header {
+    display: block;
+    padding-left: 12px;
+  }
+  .one,
+  .two {
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .main {
+    font-size: 18px;
+    text-align: center;
+    left: calc((100% - 304px) / 2);
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 90%;
+    }
+  }
+
+  .footer {
+    font-size: 15px;
+    padding: 15px 5px;
+  }
+  i {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+}
+@media (min-width: 366px) and (max-width: 500px) {
+  .home {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+  }
+  .header {
+    display: flex;
+    padding-left: 12px;
+  }
+  .one,
+  .two {
+    display: flex;
+    flex-direction: row;
+  }
+  a {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .main {
+    font-size: 18px;
+    text-align: center;
+    left: calc((100% - 340px) / 2);
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 85%;
+    }
+  }
+
+  .footer {
+    font-size: 15px;
+    padding: 15px 5px;
+  }
+  i {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+}
+@media (min-width: 501px) and (max-width: 750px) {
+  .home {
+    padding: 30px 15px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+  .main {
+    font-size: 24px;
+    left: calc((100% - 420px) / 2);
+  }
+  .footer {
+    font-size: 16px;
+    padding: 15px 5px;
+  }
+  i {
+    font-size: 15px;
+    margin-right: 2px;
+  }
+}
+@media (min-width: 630px) and (max-width: 879px) {
+  .main {
+    font-size: 37px;
+    left: calc((100% - 588px) / 2);
+  }
+  i {
+    font-size: 15px;
+    margin-right: 2px;
+  }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Not Found</title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        background-image: url(./delicious-serbian-food-arrangement-flat-lay.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 94vh;
+      }
+      .home {
+        padding: 30px 20px;
+        height: 94vh;
+        position: relative;
+      }
+      .header {
+        display: flex;
+      }
+      a,
+      i {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      .main {
+        position: absolute;
+        opacity: 0.7;
+
+        left: calc((100% - 850px) / 2);
+        font-size: 55px;
+
+        color: white;
+        top: 50%;
+
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        animation: typing 20s steps(60, end) infinite 2s forwards,
+          blink 1s step-start infinite;
+        border-right: 1px solid white;
+        transition: 0.5s;
+      }
+      .mainp {
+        width: 90%;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+          border-right: 1px solid transparent;
+        }
+      }
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+
+      .ma {
+        margin-right: 0px;
+      }
+      .footer {
+        color: white;
+        background-color: brown;
+        height: 50px;
+        padding: 15px 30px 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0px;
+      }
+
+      @media (max-width: 365px) {
+        .home {
+          padding-left: 0px;
+
+          display: flex;
+          justify-content: start;
+        }
+        .header {
+          display: block;
+          padding-left: 12px;
+        }
+        .one,
+        .two {
+          display: flex;
+          flex-direction: column;
+        }
+        a {
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+        .main {
+          font-size: 18px;
+          text-align: center;
+          left: calc((100% - 304px) / 2);
+        }
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 90%;
+          }
+        }
+
+        .footer {
+          font-size: 15px;
+          padding: 15px 5px;
+        }
+        i {
+          font-size: 14px;
+          margin-right: 2px;
+        }
+      }
+      @media (min-width: 366px) and (max-width: 500px) {
+        .home {
+          padding-left: 0px;
+          padding-right: 0px;
+          display: flex;
+        }
+        .header {
+          display: flex;
+          padding-left: 12px;
+        }
+        .one,
+        .two {
+          display: flex;
+          flex-direction: row;
+        }
+        a {
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+        .main {
+          font-size: 18px;
+          text-align: center;
+          left: calc((100% - 340px) / 2);
+        }
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 85%;
+          }
+        }
+
+        .footer {
+          font-size: 15px;
+          padding: 15px 5px;
+        }
+        i {
+          font-size: 14px;
+          margin-right: 2px;
+        }
+      }
+      @media (min-width: 501px) and (max-width: 750px) {
+        .home {
+          padding: 30px 15px;
+        }
+
+        a {
+          font-size: 18px;
+        }
+        .main {
+          font-size: 24px;
+          left: calc((100% - 420px) / 2);
+        }
+        .footer {
+          font-size: 16px;
+          padding: 15px 5px;
+        }
+        i {
+          font-size: 15px;
+          margin-right: 2px;
+        }
+      }
+      @media (min-width: 630px) and (max-width: 879px) {
+        .main {
+          font-size: 37px;
+          left: calc((100% - 588px) / 2);
+        }
+        i {
+          font-size: 15px;
+          margin-right: 2px;
+        }
+      }
+    </style>
+
+    <!-- <style media="screen">
+      body {
+        background: #eceff1;
+        color: rgba(0, 0, 0, 0.87);
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #message {
+        background: white;
+        max-width: 360px;
+        margin: 100px auto 16px;
+        padding: 32px 24px 16px;
+        border-radius: 3px;
+      }
+      #message h3 {
+        color: #888;
+        font-weight: normal;
+        font-size: 16px;
+        margin: 16px 0 12px;
+      }
+      #message h2 {
+        color: #ffa100;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+      #message h1 {
+        font-size: 22px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 0 0 16px;
+      }
+      #message p {
+        line-height: 140%;
+        margin: 16px 0 24px;
+        font-size: 14px;
+      }
+      #message a {
+        display: block;
+        text-align: center;
+        background: #039be5;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        padding: 16px;
+        border-radius: 4px;
+      }
+      #message,
+      #message a {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+      #load {
+        color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        font-size: 13px;
+      }
+      @media (max-width: 600px) {
+        body,
+        #message {
+          margin-top: 0;
+          background: white;
+          box-shadow: none;
+        }
+        body {
+          border-top: 16px solid #ffa100;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <div id="message">
+      <h2>404</h2>
+      <h1>Page Not Found</h1>
+      <p>
+        The specified file was not found on this website. Please check the URL
+        for mistakes and try again.
+      </p>
+      <h3>Why am I seeing this?</h3>
+      <p>
+        This page was generated by the Firebase Command-Line Interface. To
+        modify it, edit the <code>404.html</code> file in your project's
+        configured <code>public</code> directory.
+      </p>
+    </div>
+  </body>
+</html>
